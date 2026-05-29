@@ -1,0 +1,24 @@
+Linear Regression :
+
+-> Minimum Sample Requirement :
+For a dataset with m features, we generally need at least (m + 1) independent samples to uniquely determine a linear regression model.
+Reason :
+A linear regression model in m-dimensional space is written as:
+y = w₁x₁ + w₂x₂ + ... + wₘxₘ + b
+Here, there are (m + 1) unknown parameters:
+    • m weights : (w₁, w₂, ..., wₘ)
+    • 1 bias/intercept : (b)
+To uniquely solve for these unknown parameters, we require at least (m + 1) independent samples.
+Example :
+Simple Linear Regression:
+y = mx + c
+This model has 2 unknown parameters:
+    • slope (m)
+    • intercept (c)
+Therefore, we need at least 2 distinct points to determine a unique regression line.
+Case:
+    • 2 points  → One unique line can be drawn.
+    • 1 point   → Infinitely many lines can pass through the point.
+Important Note :
+(m + 1) samples represent only the minimum mathematical requirement for a unique solution.
+In practical machine learning, we usually use far more than (m + 1) samples so that the model learns general patterns and avoids overfitting.
